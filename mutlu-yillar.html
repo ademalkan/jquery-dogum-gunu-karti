@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <button>Happy Birthday!</button>
+    <div id="null"></div>
+    <div id="container">
+        <h3>HAPPY BIRTHDAY!</h3>
+        <p><b>Happy birthday. Good you were born. <br> Many happy returns of the day.</b></p>
+    </div>
+
+
+</body>
+<style type="text/css">
+    button {
+        height: 20vh;
+        width: 20vw;
+        margin: 30vh 40vw;
+        position: absolute;
+    }
+    div {
+        display: none;
+    }
+    body {
+        background-color: #ccb69e;
+    }
+    #null {
+        margin: -3vh 18.5vw;
+        width: 58vw;
+        background-color: rgb(180, 182, 186);
+        position: absolute;
+        height: 80vh;
+
+    }
+    #container {
+        margin: 10vh auto;
+        width: 50vw;
+        height: 70vh;
+        background-color: #f3f3f3;
+        text-align: center;
+        box-shadow: 10px 0;
+        padding: 5vh;
+
+    }
+    #contanier > h3 {
+    }
+    h3 {
+        font-size: 5rem;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#container" ).draggable();
+  } );
+  $( "button" ).click(function() {
+  $( "div" ).show( "fold", 500 );
+  $( "button" ).hide( "drop", { direction: "down" }, "slow" );
+
+});
+</script>
+
+</html>
